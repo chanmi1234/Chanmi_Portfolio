@@ -1,0 +1,959 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://webfontworld.github.io/kopus/KoPubWorldBatang.css');
+
+/* font-family: 'KoPubWorldBatang'; */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #3c3530;
+}
+
+.alert {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+.alert .alert_wondow {
+    position: absolute;
+    left: 50%;top: 50%;transform: translate(-50%,-50%);
+}
+
+.alert .alert_ok {position: absolute;left: 50%;top: 65%;transform: translateX(-50%);cursor: pointer;}
+.alert .alert_x{position: absolute;right:8px ;top: 8px;cursor: pointer;}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+
+}
+
+
+
+header nav {
+    width: 840px;
+    color: #fff;
+    text-align: center;
+}
+
+header nav ul.gnb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+header nav ul.gnb>li {
+    width: 20%;
+    position: relative;
+}
+
+header nav ul.gnb>li>a {
+    width: 100%;
+    height: 40px;
+    display: block;
+    transition: all 0.5s;
+}
+header nav ul.gnb>li>a:hover{color: #f3ecbb;}
+header nav ul.gnb>li>ul.sub {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    display: none;
+}
+
+header nav ul.gnb>li>ul.sub>li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+header nav ul.gnb>li>ul.sub>li a {
+    display: block;
+}
+
+main.contents {
+    width: 100%;
+
+}
+
+
+main.contents .main_banner {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+main.contents .main_banner .main_slider {}
+
+main.contents .main_banner .main_slider li {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main.contents .main_banner .main_slider .txt_box .tb_bottom {
+    font-size: 25px;
+    margin-top: 72px;
+}
+
+main.contents .main_banner .main_slider .txt_box h2 {
+    font-family: 'KoPubWorldBatang';
+}
+
+main.contents .main_banner .main_slider .txt_box .tb_bottom p {
+    font-weight: 250;
+    font-family: 'inter';
+    font-size: 24px;
+}
+
+main.contents .main_banner .main_slider .txt_box .tb_bottom p b {
+    font-weight: 600;
+}
+
+main.contents .main_banner .main_slider li span {
+    font-size: 18px;
+    font-weight: 300;
+    display: block;
+    width: 170px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 110px;
+    transition: all 0.5s;
+}
+
+main.contents .main_banner .main_slider li span a {
+    display: block;
+}
+
+main.contents .main_banner .main_slider li span:hover {
+    background: rgba(70, 63, 58, 0.2);
+}
+
+main.contents .main_banner .main_slider li.ms1 {
+    background-image: url(../images/Main_banner1.jpg);
+    background-position: left -60px;
+    color: #F2EFD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main.contents .main_banner .main_slider li.ms1 .con_box {
+    width: 1450px;
+    height: 597px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main.contents .main_banner .main_slider li.ms1 .txt_box {}
+
+main.contents .main_banner .main_slider li.ms1 .txt_box .tb_top {
+    font-family: 'KoPubWorldBatang';
+}
+
+main.contents .main_banner .main_slider li.ms1 .txt_box .tb_top h2 {
+    font-size: 67px;
+    font-weight: 300;
+    margin-bottom: -18px;
+}
+
+main.contents .main_banner .main_slider li.ms1 .txt_box .tb_top p {
+    font-size: 35px;
+    margin-bottom: 72px;
+}
+
+
+main.contents .main_banner .main_slider li.ms2 {
+    background-image: url(../images/Main_banner2.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 150px 180px;
+    color: #F2EFD8;
+}
+
+main.contents .main_banner .main_slider li.ms2 .con_box {
+    width: 800px;
+    height: 404px;
+
+}
+
+main.contents .main_banner .main_slider li.ms2 .txt_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+main.contents .main_banner .main_slider li.ms2 .txt_box .tb_top {}
+
+main.contents .main_banner .main_slider li.ms2 .txt_box .tb_top p {
+    font-size: 30px;
+}
+
+main.contents .main_banner .main_slider li.ms2 .txt_box .tb_top h2 {
+    font-size: 61px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+main.contents .main_banner .main_slider li.ms2 .txt_box .tb_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 36px;
+}
+
+main.contents .main_banner .main_slider li.ms2 .txt_box .tb_bottom span {
+    color: #F2EFD8;
+}
+
+main.contents .main_banner .main_slider li.ms3 {
+    background-image: url(../images/Main_banner3.jpg);
+    color: #3B3344;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box {
+    width: 1500px;
+    height: 715px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box .txt_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box .txt_box .tit {
+    margin-top: 61px;
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box .txt_box p {
+    font-size: 33px;
+    font-weight: 300;
+    color: #5f5965;
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box .txt_box h2 {
+    margin-bottom: 78px;
+
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box .txt_box em {
+    font-size: 31px;
+    font-style: normal;
+    text-align: center;
+    font-family: 'KoPubWorldBatang';
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+main.contents .main_banner .main_slider li.ms3 .con_box .txt_box span {
+    color: #3B3344;
+    border: 1px solid #3B3344;
+}
+
+main.contents .main_banner .swiper-button-next,
+main.contents .main_banner .swiper-button-prev {
+    color: #fff;
+    margin: 0 20px;
+    width: 35px;
+}
+
+
+main.contents h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 122px;
+}
+
+main.contents .about_areke {
+    width: 100%;
+    padding: 149px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+main.contents .about_areke>img {
+    position: absolute;
+    right: 14%;
+    top: 13.2%;
+
+}
+
+
+
+main.contents .about_areke .about {
+    width: 100%;
+    height: 364px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all .8s;
+}
+
+main.contents .about_areke .about.up {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+main.contents .about_areke .about .txt_box {}
+
+main.contents .about_areke .about .txt_box h3 {
+    font-size: 25px;
+    vertical-align: 0;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+main.contents .about_areke .about.up .txt_box h3 {}
+
+main.contents .about_areke .about .txt_box p {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+main.contents .about_areke .about .txt_box span {
+    font-size: 15px;
+    color: #808080;
+}
+
+main.contents .about_areke .ab_1 .txt_box,
+main.contents .about_areke .ab_3 .txt_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(-600px);
+    opacity: 0;
+    transition: all 2s;
+
+}
+
+main.contents .about_areke .ab_1.up .txt_box,
+main.contents .about_areke .ab_3.up .txt_box {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+main.contents .about_areke .ab_1 .txt_box p,
+main.contents .about_areke .ab_3 .txt_box p {
+    margin-bottom: 120px;
+}
+
+
+
+
+
+main.contents .about_areke .ab_2 .txt_box,
+main.contents .about_areke .ab_4 .txt_box {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(600px);
+    opacity: 0;
+    transition: all 2s;
+}
+
+main.contents .about_areke .ab_2.up .txt_box,
+main.contents .about_areke .ab_4.up .txt_box {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+main.contents .about_areke .ab_1 .txt_box h3 {
+    position: relative;
+}
+
+main.contents .about_areke .ab_1 .txt_box h3::before {
+    content: '';
+    display: block;
+    width: 370px;
+    height: 14px;
+    background: #F5F2E2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main.contents .about_areke .ab_2 .txt_box h3 {
+    position: relative;
+}
+
+main.contents .about_areke .ab_2 .txt_box h3::before {
+    content: '';
+    display: block;
+    width: 342px;
+    height: 14px;
+    background: #F5F2E2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main.contents .about_areke .ab_3 .txt_box h3 {
+    position: relative;
+}
+
+main.contents .about_areke .ab_3 .txt_box h3::before {
+    content: '';
+    display: block;
+    width: 213px;
+    height: 14px;
+    background: #F5F2E2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main.contents .about_areke .ab_4 {
+    margin-bottom: 0;
+}
+
+main.contents .about_areke .ab_4 .txt_box h3 {
+    position: relative;
+}
+
+main.contents .about_areke .ab_4 .txt_box h3::before {
+    content: '';
+    display: block;
+    width: 196px;
+    height: 14px;
+    background: #F5F2E2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+main.contents .reservation {
+    width: 100%;
+    background: #F3F3F1;
+    padding: 141px 0;
+    position: relative;
+}
+
+main.contents .reservation>img {
+    position: absolute;
+    top: 28%;
+    left: 13.2%;
+}
+
+section.reservation .container {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+main.contents .reservation h2 {
+    margin-bottom: 31px;
+    align-self: flex-end;
+}
+
+main.contents .reservation .con {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main.contents .reservation .con section {
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+main.contents .reservation .con section.on {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+main.contents .reservation .con section h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+main.contents .reservation .con section .hover_con {
+    width: 533px;
+    height: 531px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+main.contents .reservation .con section .hover_con img {
+    transition: all 0.6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main.contents .reservation .con section .hover_con:hover img {
+    transform: scale(1.1);
+}
+
+main.contents .reservation .con section .hover_con .txt_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: none;
+    transition: all 1s;
+}
+
+main.contents .reservation .con section .hover_con:hover .txt_box {
+    display: flex;
+}
+
+main.contents .reservation .con section .hover_con .txt_box h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 49px;
+    color: transparent;
+    font-weight: 900;
+    font-family: 'inter';
+    -webkit-text-stroke: 0.4px #fff;
+}
+
+main.contents .reservation .con section .hover_con .txt_box p {
+    font-size: 18px;
+    margin-bottom: 45px;
+    /* 
+    font-family: 'KoPubWorldBatang'; */
+    font-weight: 300;
+}
+
+main.contents .reservation .con section .hover_con .txt_box span {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    width: 287px;
+    justify-content: space-between;
+}
+
+main.contents .reservation .con section .hover_con .txt_box span a {
+    width: 137px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    border: 1px solid #fff;
+    transition: all 0.6s;
+}
+
+main.contents .reservation .con section .hover_con .txt_box span a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------- */
+
+
+main.contents .program {
+    width: 100%;
+    position: relative;
+    padding: 306px 0;
+
+}
+
+main.contents .program .txt_bg {
+    position: absolute;
+    top: 420px;
+    right: 13.8%;
+    width: 12px;
+    height: 353px;
+    background-repeat: no-repeat;
+}
+
+main.contents .program h2 {
+    align-self: flex-start;
+}
+
+main.contents .program div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.contents .program div span {
+    font-size: 30px;
+    margin-bottom: 95px;
+}
+
+main.contents .program ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 164px;
+}
+
+main.contents .program ul li {
+    width: 30%;
+    height: 470px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+main.contents .program ul li:hover {
+    color: #9e9771;
+}
+
+main.contents .program ul.on li {
+    animation: prAni 1s forwards;
+}
+
+
+@keyframes prAni {
+    0% {
+        margin-top: 230px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+main.contents .program ul li:nth-child(-n+3) {
+    margin-bottom: 104px;
+}
+
+main.contents .program ul li a .img_box {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 21px;
+}
+
+main.contents .program ul li a img {
+    transition: all 0.6s;
+    width: 100%;
+}
+
+main.contents .program ul li a img:hover {
+    transform: scale(1.1);
+}
+
+main.contents .program ul li a span {
+    width: 30%;
+    font-size: 12px;
+    font-family: 'inter';
+}
+
+main.contents .program ul li a h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+
+
+main.contents .program ul li p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #766f6a;
+    font-family: 'inter';
+    transition: all 0.6s;
+}
+
+main.contents .program ul li:hover p {
+    color: #9e9771;
+}
+
+main.contents .program .body {
+    width: 100%;
+}
+
+main.contents .program .body ul {
+    margin-bottom: 0;
+}
+
+main.contents .program .program_txt {
+    padding-top: 230px;
+    width: 100%;
+    text-align: center;
+    font-family: 'KoPubWorldBatang';
+    line-height: 1.7;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+/* 유투브 백그라운드 영상 */
+.background {
+    padding: 50px 0;
+    height: 1010px;
+    background: #ccc;
+    position: relative;
+}
+
+.background.youtube_bg {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/* FAQ */
+
+main.contents .faq {
+    width: 100%;
+    padding: 170px 0 140px;
+
+}
+
+main.contents .faq .container {
+/* height: 620px; */
+}
+
+main.contents .faq h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+main.contents .faq .contents .txt {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #D2CDCA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+main.contents .faq .contents .txt p {
+    font-size: 17px;
+
+
+}
+
+main.contents .faq .contents .txt i {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main.contents .faq .contents .txt i.on {
+    transform: rotate(-45deg);
+}
+
+main.contents .faq .contents ul {
+    width: 100%;
+    display: none;
+}
+
+main.contents .faq .contents ul.slide{display: flex;}
+
+main.contents .faq .contents ul li {
+    width: 100%;
+    padding: 25px 0 27px 27px;
+    color: #75716d;
+    font-size: 14px;
+
+}
+
+main.contents .faq .contents ul li h5 {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+main.contents .faq .contents ul li p {
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    color: #fff;
+    padding: 57px 0;
+    overflow: hidden;
+    background: #3C3530;
+}
+
+
+footer .f_top {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer .f_top a {
+    border-right: 1px solid #fff;
+    padding: 0 18px;
+}
+
+footer .f_top a:nth-child(1) {
+    padding-left: 0;
+}
+
+footer .f_top a:nth-child(3) {
+    border: 0;
+}
+
+footer .f_bottom {
+    display: flex;
+}
+
+footer .contact_us {
+    font-size: 17px;
+}
+
+footer .contact_us span {
+    font-weight: bold;
+}
+
+footer .contact_us p {
+    font-size: 38px;
+    margin: 30px 0;
+}
+
+footer .contact_us p b {
+    color: #6c6c6c;
+}
+
+footer .contact_us i {
+    color: #aaa8ab;
+}
+
+footer .contact_us button {
+    font-size: 14px;
+
+    display: block;
+    width: 120px;
+    height: 44px;
+    background: transparent;
+    color: #fff;
+    margin-top: 40px;
+    border: 1px solid #fff;
+}
+
+footer .con {
+    margin-left: 120px;
+}
+
+footer .con p {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+footer .con ul {
+    font-size: 14px;
+    width: 350px;
+    margin-top: 26px;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+footer .con ul li {
+    float: left;
+    letter-spacing: -1px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+footer .con ul li.ml {
+    margin-left: 5px;
+}
+
+footer .con ul li.clear {
+    clear: both;
+}
+
+footer .con ul li:nth-child(even) {
+    color: #aaa8ab;
+}
+
+footer .con em {
+    font-size: 13px;
+    color: #616061;
+    font-style: normal;
+}
+
+aside {
+    position: fixed;
+    z-index: 80;
+    right: 3%;
+    bottom: 4%;
+    color: #fff;
+}
+
+aside div {
+    width: 80px;
+    height: 80px;
+}
+
+aside .kakao a {
+    width: 100%;
+    height: 100%;
+    background: #EFE9CA;
+    color: #8B786B;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+aside .kakao a p {}
+
+aside .top {
+    cursor: pointer;
+    border-radius: 50%;
+    background: #8B786B;
+    font-weight: 600;
+    color: #EFE9CA;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}

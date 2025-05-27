@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AOOM 웹 사이트 입니다">
+    <meta name="keywords" content="AOOM, 웹디자인, 포트폴리오, 디자이너, 웹 포트폴리오">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 수정</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/userCommon.css">
+    <link rel="stylesheet" href="css/profileUpdate.css">
+    <script src="https://kit.fontawesome.com/82b4a4fcad.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/profileUpdate.js" defer></script>
+</head>
+
+<body>
+    <div class="fixed">
+        <header>
+
+
+            <div class="inner">
+
+
+                <ul class="nav_menu">
+                    <li>
+                        <p>계정</p>
+                    </li>
+                    <li>
+                        <p>메세지</p>
+                    </li>
+                    <li>
+                        <p>알림</p>
+                    </li>
+                    <li>
+                        <p>숙소예약목록</p>
+                    </li>
+                    <li>
+                        <p>관심목록</p>
+                    </li>
+                    <li>
+                        <p>자주묻는질문</p>
+                    </li>
+                    <li>
+                        <p>로그아웃</p>
+                    </li>
+                </ul><!-- //nav_menu -->
+                <a href="#" class="logo">
+                    <img src="img/n_1.png" alt="AOOM로고">
+                </a><!-- //logo -->
+
+                <div class="user">
+                    <div class="host_mode">
+                        <a href="">
+                            호스트 모드
+                        </a>
+                    </div><!-- //host_mode -->
+                    <div class="profile">
+                        <img src="img/n_2.png" alt="유저 프로필">
+                        <p>이름</p>
+                        <i class="fa-solid fa-bars"></i>
+                    </div><!-- //profile -->
+                </div><!--//user -->
+
+            </div><!-- //inner -->
+        </header><!--//header-->
+    </div><!-- //fixed -->
+    <!-- ----------------------------------------------컨텐츠 시작----------------------------------- -->
+
+    <div class="user_main inner">
+        <div class="u_m_left">
+            <div class="profile_t">
+                <div class="pro_pic">
+                    <img src="img/pu_1.png" alt="프로필 사진">
+                    <div class="pic_icon">
+                        <i class="fas fa-camera"></i>
+                        <p>추가</p>
+                    </div><!-- //pic_icon -->
+                </div><!-- //pro_pic -->
+            </div><!-- //profile_t -->
+        </div><!-- //u_m_left -->
+
+        <div class="u_m_right">
+            <h2>프로필 수정</h2>
+            <p>프로필은 AOOM 전반에 걸쳐 다른 게스트와 호스트에게 나를 알리는 기본적인 정보입니다.</p>
+            <ul class="u_list">
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_3.png" alt="출생 연도">
+                        <p>출생 연도</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>출생 연도</h2>
+                                    <span class="gray">
+                                        회원님의 정확한 생년월일은 다른 사용자에게 공개되지 않으니
+                                        <br>걱정하지 마세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_4.png" alt="출신학교">
+                        <p>출신학교</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>어느 학교를 다니셨나요?</h2>
+                                    <span class="gray">
+                                        홈스쿨링, 고등학교, 직업학교 등 출신 학교를 소개해주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_5.png" alt="직업">
+                        <p>직업</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>어떤 일을 하시나요?</h2>
+                                    <span class="gray">
+                                        어떤 직업을 가지고 계신지 알려주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_6.png" alt="거주지">
+                        <p>거주지</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>거주지</h2>
+                                    <span class="gray">
+                                        어느 지역에 거주하고 계신지 알려주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_7.png" alt="구사 언어">
+                        <p>구사 언어</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>구사 언어</h2>
+                                    <span class="gray">
+                                        가능한 언어를 알려주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_8.png" alt="취미">
+                        <p>취미</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>취미</h2>
+                                    <span class="gray">
+                                        자유 시간이 있으면 주로 어떤 활동이나 취미를 즐기시는지 알려주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_9.png" alt="MBTI">
+                        <p>MBTI</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>MBTI</h2>
+                                    <span class="gray">
+                                        어떤 MBTI를 가지고 계시는지 알려주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_contents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+
+                </li>
+                <li>
+                    <div class="l_left">
+                        <img src="img/pu_10.png" alt="성별">
+                        <p>성별</p>
+                    </div><!-- //l_lrft -->
+                    <i class="fas fa-chevron-right"></i>
+
+                    <div class="u_modal">
+                        <div class="m_bg">
+                            <div class="m_top">
+                                <i class="fas fa-times"></i>
+                            </div><!-- //m_top -->
+                            <div class="m_contents">
+                                <div class="title">
+                                    <h2>성별</h2>
+                                    <span class="gray">
+                                        성별을 알려주세요.
+                                    </span><!-- //gray -->
+                                </div><!-- //title -->
+                                <div class="con">
+                                    <input type="text">
+                                    <span class="gray">n자 남음</span>
+                                </div><!-- //con -->
+                            </div><!-- //m_cont ents -->
+                            <div class="m_bottom">
+                                <button type="submit" class="navy">저장</button>
+                            </div><!-- //m_bottom -->
+                        </div>
+                    </div><!-- //u_modal -->
+                </li>
+            </ul><!-- //u_list -->
+            <div class="aboutme">
+                <h2>자기소개</h2>
+                <span class="gray">자유롭게 작성해보세요.</span>
+                <ul class="a_me">
+                    <li> <i class="fas fa-plus"></i>
+
+                        <div class="u_modal ">
+                            <div class="m_bg">
+                                <div class="m_top">
+                                    <i class="fas fa-times"></i>
+                                </div><!-- //m_top -->
+                                <div class="m_contents">
+                                    <div class="title">
+                                        <h2>자기소개</h2>
+                                        <span class="gray">
+                                            호스트 또는 게스트가 회원님에 대해 알 수 있도록 간략하게
+                                            <br> 자기소개를 해주세요.
+                                        </span><!-- //gray -->
+                                    </div><!-- //title -->
+                                    <div class="con">
+                                        <textarea></textarea>
+                                        <span class="gray">n자 남음</span>
+                                    </div><!-- //con -->
+                                </div><!-- //m_cont ents -->
+                                <div class="m_bottom">
+                                    <button type="submit" class="navy">저장</button>
+                                </div><!-- //m_bottom -->
+                            </div>
+                        </div><!-- //u_modal -->
+                    </li>
+
+                </ul><!-- //a_me -->
+
+
+              
+                <div class="bottom_btn">
+                    <button type="submit" class="navy">
+                        수정 완료
+                    </button><!-- //navy -->
+
+                </div>
+
+            </div><!-- //aboutme -->
+        </div><!-- //u_m_right -->
+    </div><!-- //user_maibn -->
+
+
+    <!-- ----------------------------------------------컨텐츠 끝----------------------------------- -->
+
+
+    <footer class="inner clear">
+        <div class="f_top">
+            <div class="ft_left">
+                <p>© 2024 Airbnb, Inc. · 개인정보 처리방침 · 이용약관 · 사이트맵 · 환불 정책 · 회사 세부정보</p>
+            </div>
+            <div class="ft_right">
+                <p>자주 묻는 질문</p>
+            </div>
+        </div><!-- //f_top -->
+        <div class="f_bottom">
+            <span>
+                웹사이트제공자:GDJ80alphaTeam,privateunlimitedcompany,8HanoverQuayDublin2,D02DP23Ireland|팀장:이용훈|VAT번호:IE12345678L사업자등록번호:IE123456|연락처:newlife5991@naver.com,
+                웹사이트,010-7635-9302|호스팅서비스제공업체: <br>아마존웹서비스|알파비앤비는
+                통신판매중개자로알파비앤비플랫폼을통하여게스트와호스트사이에이루어지는통신판매의당사자가아닙니다.알파비앤비플랫폼을통하여 예약된 숙소, 호스트 서비스에 관한 의무와 책임은 해당 서비스를
+                제공하는
+                호스트에게 있습니다.
+            </span>
+        </div><!-- //f_bottom -->
+    </footer>
+
+</body>
+
+</html>
