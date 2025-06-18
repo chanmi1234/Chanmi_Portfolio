@@ -11,6 +11,10 @@
 
 }
 
+b {
+    font-weight: 700;
+}
+
 img {
     width: unset;
     height: unset;
@@ -205,7 +209,6 @@ img {
 
 
 .noto_16pt {
-
     font-size: 16px;
 }
 
@@ -266,11 +269,11 @@ img {
 }
 
 p {
-    letter-spacing: 3;
+    letter-spacing: 3;font-weight: 500;
 }
 
 b {
-    letter-spacing: 3;
+    letter-spacing: 2;
 }
 
 /* 도형 */
@@ -437,6 +440,18 @@ button {
     padding: 40px 47px;
     justify-content: space-between;
     align-items: center;
+    align-items: start;
+}
+
+.core_goals .core_right .profile_box .profile .p_b_bottom .pic {
+    width: 140px;
+    height: 100%;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.core_goals .core_right .profile_box .profile .p_b_bottom .pic img {
+    width: 100%;
 }
 
 .core_goals .core_right .profile_box .profile .p_b_bottom .p_b_b_left,
@@ -523,13 +538,14 @@ button {
 
 .benchmarking .bench_bottom {
     width: 100%;
-    padding: 20px;  overflow: hidden;
+    padding: 20px;
+    overflow: hidden;
 
 }
 
 .benchmarking .bench_bottom .move {
     width: 100%;
-  
+
     display: flex;
 }
 
@@ -590,14 +606,14 @@ button {
 
 /* 다음 아이콘 ---------------------------------------------------------------------------------- */
 
-.next .container {
+.next .container {padding: 80px 0;
     display: flex;
     justify-content: center;
 }
 
 /* 해결방안 --------------------------------------------------------------------------------------*/
 .solusion {
-    padding: 108px 0;
+    padding: 140px 0 150px ;
 }
 
 .solusion .container {
@@ -644,7 +660,7 @@ button {
 /* -기능소개 --------------------------------------------------------------------------- */
 
 .feature_introduction {
-    padding: 130px 0;
+    padding: 140px 0;
 }
 
 .feature_introduction .f_in_top {
@@ -663,7 +679,7 @@ button {
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    transition: width 1s;
+    transition: width 1s;  cursor: pointer;
 }
 
 .feature_introduction .f_in_bottom .con_box .dsp_non {
@@ -680,7 +696,7 @@ button {
     left: 50%;
     top: 30%;
     transform: translateX(-50%);
-    cursor: pointer;
+  
 }
 
 .feature_introduction .f_in_bottom .con_box .img_box {
@@ -706,8 +722,8 @@ button {
 /* 쿨래스 on이 추가 되었을 때 상황 시작*/
 
 .feature_introduction .f_in_bottom .con_box.on {
-    width: 72%;
-    padding: 50px;
+    width: 70%;
+    padding: 50px;cursor: default;
 
 
 }
@@ -777,7 +793,8 @@ button {
     justify-content: space-between;
     display: none;
 }
-
+.feature_introduction .f_in_bottom .con_box.on .b_right .c_box p{font-size: 20px;}
+.feature_introduction .f_in_bottom .con_box.on .b_right .c_box p.sub_gr{font-size: 16px;}
 .feature_introduction .f_in_bottom .con_box.on .b_right .c_box.click {
     display: flex;
 }
@@ -1130,12 +1147,14 @@ button {
 
 
 .branding .last .icon_box div {
+
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 }
 
 .branding .last .icon_box img {
+        width: 140px;
     padding: 25px 22px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
     border-radius: 15px;

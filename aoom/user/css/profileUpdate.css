@@ -189,7 +189,7 @@ textarea, input{border: #9e9e9e 1px solid;border-radius: 8px;outline: 0;}
 
 .user_main .u_m_right .u_modal textarea {
     width: 496px;
-    height: 166px;
+    height: 166px;padding: 10px;
 }
 
 .user_main .u_m_right .u_modal button {

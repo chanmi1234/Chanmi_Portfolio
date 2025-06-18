@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     } else {
                         room.classList.remove('fade_in');
                     }
-                }); 
+                });
             }
 
 
@@ -154,5 +154,20 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('aside').addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-});
+    $('.feature_introduction .f_in_bottom .con_box').click(function () {
+        $(this).addClass('on').siblings().removeClass('on')
+    })
 
+
+
+});
+$(function () {
+    $('.feature_introduction .con_b_bottom .txt_box p').click(function () {
+        let thisI = $(this).index()
+        $(this).addClass('click').siblings().removeClass('click')
+        $('.feature_introduction .f_in_bottom .con_box.on .b_right .c_box').eq(thisI).addClass('click').siblings().removeClass('click')
+    })
+    $('body button.c_nv_bg, .feature_introduction .con_b_top i').click(function(){
+        $('.feature_introduction').hide()
+    })
+})

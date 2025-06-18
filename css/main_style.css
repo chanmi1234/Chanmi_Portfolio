@@ -46,7 +46,7 @@ body {
     align-items: center;
     background: #141313;
     justify-content: center;
-    position: relative;
+    position: relative;overflow: hidden;
 }
 
 .project video {
@@ -93,7 +93,7 @@ video[poster]{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+transition: 1s;
 }
 
 .project .content .btn a:hover {
@@ -122,7 +122,7 @@ video[poster]{
     font-size: 100px; ;
    
 }
-
+/* 아르케스파 */
 .areuke h2{display: flex;justify-content: center;align-items: end;}
 
 
@@ -242,3 +242,5 @@ video[poster]{
     .areuke .content h2 {padding-bottom: 0;}
     .areuke .content h2 img{width: 70%;}
 }
+.stressed_app .app_bg {background: #39332D;;}
+.stressed_app .app_bg img{width: 100%;object-fit: cover;opacity: 0.7;}

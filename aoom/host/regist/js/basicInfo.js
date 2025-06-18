@@ -30,7 +30,7 @@ $(document).ready(function () {
     var originalSrc = [];
 
     // 문서 로딩 후 원래 이미지 경로를 저장
-    $('.page_rolling .icon_box li img').each(function(index) {
+    $('.page_rolling .icon_box li img').each(function (index) {
         originalSrc[index] = $(this).attr('src');
     });
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
         $this.toggleClass('on');
 
         // 모든 li 요소의 이미지 경로를 원래대로 복원
-        $('.page_rolling .icon_box li img').each(function(i) {
+        $('.page_rolling .icon_box li img').each(function (i) {
             if ($(this).closest('li').hasClass('on')) {
                 // 'on' 클래스가 있는 li의 이미지는 변경
                 $(this).attr('src', 'img/step1_' + (i + 1) + 'on.png');
@@ -53,7 +53,7 @@ $(document).ready(function () {
             }
         });
     });
-    $('.page_rolling .select_btn button').click(function(){
+    $('.page_rolling .select_btn button').click(function () {
         $(this).toggleClass('on')
     })
 
@@ -73,31 +73,42 @@ $(document).ready(function () {
         $pageItems.removeClass('active');
         // 현재 페이지에 active 클래스 추가
         $pageItems.eq(currentIndex).addClass('active');
-        
+
         // 모든 프로그레스 바 이미지의 active 클래스 제거
         $progressImages.removeClass('active');
         // 현재 인덱스의 프로그레스 바 이미지에 active 클래스 추가
         $progressImages.eq(currentIndex).addClass('active');
+
     }
 
     // 초기 페이지 설정
     updatePage();
 
     // 이전 버튼 클릭 이벤트
-    $('.prev').click(function() {
+    $('.prev').click(function () {
         if (currentIndex > 0) {
             currentIndex--;
             updatePage();
+           if (currentIndex < 2) {
+            $('.next').css('background', '#291B3C').html('<a href="" style="color:white; text-decoration:none; display:block;  font-size:16px;">다음 단계</a>');}
+            
+        
         }
     });
 
     // 다음 버튼 클릭 이벤트
-    $('.next').click(function() {
-        if (currentIndex < totalPages - 1) {
+    $('.next').click(function () {
+        if (currentIndex < 3 - 1) {
             currentIndex++;
             updatePage();
+            if (currentIndex > 1) {
+                $(this).css('background', '#ed5977')
+                if ($(this).find('a').length === 0) {
+                $(this).html('<a href="../regist/preview.html" style="color:white; text-decoration:none; display:block;  font-size:16px;">다음 단계</a>');
+            }
+            }
         }
     });
 
-});   
+});
 

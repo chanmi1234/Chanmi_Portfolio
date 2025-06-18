@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 .inner {
     width: 1600px;
     margin: 0 auto;
@@ -10,6 +11,284 @@
     left: 0;
     top: 0;
     z-index: 50;
+}
+
+
+body button.c_nv_bg {
+    background: #291b3c;
+    color: #fff;
+}
+
+.c_nv_strok {
+    border: 2px #291b3c solid;
+    color: #291b3c;
+    background: #fff;
+}
+
+.c_pink_bg {
+    background: #ed5977;
+    color: #fff;
+}
+
+.c_yelow_bg {
+    background: #ffb558;
+    color: #fff;
+
+}
+
+.sub_gr {
+    color: #6b6b6b;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.noto_18pt {
+    font-size: 18px;
+
+
+}
+
+
+.noto_16pt {
+
+    font-size: 16px;
+}
+
+.noto_24pt {
+    font-size: 24px;
+}
+
+.profile_c {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px #291b3c solid;
+}
+
+.feature_introduction {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 400;
+    background: rgba(0, 0, 0, 0.199);
+
+}
+
+.feature_introduction .f_in_bottom {width: 1550px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+.feature_introduction .f_in_bottom .con_box {
+    background: #fff;
+    width: 13%;
+    height: 504px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: width 1s;cursor: pointer;
+}
+
+.feature_introduction button {
+    width: 183px;
+    height: 51px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.feature_introduction button.c_nv_bg b {
+    color: #fff;
+}
+
+.feature_introduction .f_in_bottom .con_box .dsp_non {
+    display: none;
+}
+
+
+
+.feature_introduction .f_in_bottom .con_box .con_b_top b.vertical {
+    writing-mode: vertical-rl;
+    letter-spacing: 3;
+    color: #6b6b6b;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    
+}
+
+.feature_introduction .f_in_bottom .con_box .img_box {
+    position: absolute;
+    bottom: 50px;
+}
+
+.feature_introduction .f_in_bottom .con_box:nth-child(1) .img_box {
+
+    right: -60px;
+}
+
+.feature_introduction .f_in_bottom .con_box:nth-child(2) .img_box {
+    left: -50px;
+}
+
+.feature_introduction .f_in_bottom .con_box:nth-child(3) .img_box {
+
+    left: -10px;
+}
+
+
+/* 쿨래스 on이 추가 되었을 때 상황 시작*/
+
+.feature_introduction .f_in_bottom .con_box.on {
+    width: 70%;
+    padding: 50px;
+cursor:default;
+
+}
+
+.feature_introduction .f_in_bottom .con_box.on .dsp_non {
+    display: flex;
+}
+
+
+.feature_introduction .f_in_bottom .con_box.on .con_left {
+    width: 70%;
+}
+
+
+
+.feature_introduction .f_in_bottom .con_box.on .con_b_top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.feature_introduction .f_in_bottom .con_box.on .con_b_top .profile_c {
+    margin-right: 10px;
+}
+
+.feature_introduction .f_in_bottom .con_box.on .con_b_top b.vertical {
+    display: none;
+
+}
+
+.feature_introduction .f_in_bottom .con_box.on .con_left .con_left .con_b_bottom .txt_box {
+    padding-left: 20px;
+}
+
+
+.feature_introduction .f_in_bottom .con_box.on .con_left .con_b_bottom .txt_box p {
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.feature_introduction .f_in_bottom .con_box.on .con_left .con_b_bottom .txt_box p:hover {
+    color: #2b2b2b;
+}
+
+.feature_introduction .f_in_bottom .con_box.on .con_left .con_b_bottom .txt_box p.click {
+    color: #291b3c;
+    font-weight: bold;
+}
+
+
+.feature_introduction .f_in_bottom .con_box.on .b_right {
+    width: 368px;
+    height: 405px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature_introduction .f_in_bottom .con_box.on .b_right .c_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.feature_introduction .f_in_bottom .con_box.on .b_right .c_box.click {
+    display: flex;
+}
+
+
+.feature_introduction .f_in_bottom .con_box.on .img_box {}
+
+/* 기능 소개 */
+.feature_introduction .f_in_bottom .con_box:nth-child(1).on .con_b_bottom .sub_gr {
+    padding-bottom: 120px;
+
+}
+
+.feature_introduction .f_in_bottom .con_box:nth-child(1).on .con_b_bottom {
+    display: block;
+}
+
+
+.feature_introduction .f_in_bottom .con_box:nth-child(1).on .img_box {
+
+    right: 50px;
+}
+
+/* 호스트, 게스트 공통 */
+.feature_introduction .f_in_bottom .con_box:nth-child(2).on,
+.feature_introduction .f_in_bottom .con_box:nth-child(3).on {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.feature_introduction .f_in_bottom .con_box:nth-child(2).on .con_left .con_b_bottom .img_box,
+.feature_introduction .f_in_bottom .con_box:nth-child(3).on .con_left .con_b_bottom .img_box {
+
+    left: 50px;
+}
+
+.feature_introduction .f_in_bottom .con_box .con_b_top i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* 호스트 */
+.feature_introduction .f_in_bottom .con_box:nth-child(2).on .con_left .con_b_bottom .txt_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 3개의 컬럼 */
+    grid-template-rows: repeat(3, auto);
+    /* 4개의 행 */
+    gap: 18px 90px;
+    /* 각 요소 사이의 간격 */
+    text-align: left;
+    /* 글씨 왼쪽 정렬 */
+    width: fit-content;
+    /* 내용 크기에 맞게 너비 조정 */
+}
+
+/* 게스트 */
+.feature_introduction .f_in_bottom .con_box:nth-child(3).on .con_left .con_b_bottom .txt_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3개의 컬럼 */
+    grid-template-rows: repeat(4, auto);
+    /* 4개의 행 */
+    gap: 18px 90px;
+    /* 각 요소 사이의 간격 */
+    text-align: left;
+    /* 글씨 왼쪽 정렬 */
+    width: fit-content;
+    /* 내용 크기에 맞게 너비 조정 */
 }
 
 
@@ -625,13 +904,15 @@ header .inner .user .profile p {
 .room_container {
     position: relative;
     margin-top: 260px;
-    padding-bottom: 100px; /* footer 공간 확보 */
+    padding-bottom: 100px;
+    /* footer 공간 확보 */
     height: auto;
 }
 
 .room {
     padding: 47px 0 0;
-    position: relative; /* absolute에서 relative로 변경 */
+    position: relative;
+    /* absolute에서 relative로 변경 */
     left: 0;
     top: 0;
     width: 100%;
@@ -647,7 +928,11 @@ header .inner .user .profile p {
     justify-content: space-between;
     padding-bottom: 82px;
 }
-.room ul:last-child{padding: 0;}
+
+.room ul:last-child {
+    padding: 0;
+}
+
 .room ul li {
     height: 385px;
 }
@@ -724,4 +1009,3 @@ header .inner .user .profile p {
     margin-top: 9px;
     font-weight: 800;
 }
-

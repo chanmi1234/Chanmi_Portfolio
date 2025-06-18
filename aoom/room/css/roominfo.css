@@ -389,6 +389,8 @@ header .inner .user .profile p {
     border-radius: 8px;
 }
 
+
+
 .a_main_visual .a_i_bottom .a_i_bottom_right .r_pink span {
     color: #fff;
 }
@@ -670,7 +672,9 @@ header .inner .user .profile p {
     justify-content: center;
     cursor: pointer;
     border-radius: 50%;
-}.review_box .pagination {
+}
+
+.review_box .pagination {
     align-self: center;
     display: flex;
 }
@@ -686,8 +690,15 @@ header .inner .user .profile p {
     cursor: pointer;
     border-radius: 50%;
 }
-.review_box .pagination button:nth-child(3){margin: 0 5px;}
-.review_box .pagination button i{font-size: 13px;}
+
+.review_box .pagination button:nth-child(3) {
+    margin: 0 5px;
+}
+
+.review_box .pagination button i {
+    font-size: 13px;
+}
+
 .review_box .pagination button:disabled {
     opacity: 0.5;
 }
@@ -699,7 +710,8 @@ header .inner .user .profile p {
 .review_box .pagination button.prev_btn,
 .review_box .pagination button.next_btn {
     border-radius: 0;
-    background: transparent;color: #291B3C;
+    background: transparent;
+    color: #291B3C;
 }
 
 
@@ -714,5 +726,6 @@ header .inner .user .profile p {
 .review_box .pagination button.prev_btn,
 .review_box .pagination button.next_btn {
     border-radius: 0;
-    background: transparent;color: #291B3C;
+    background: transparent;
+    color: #291B3C;
 }

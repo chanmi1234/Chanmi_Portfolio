@@ -252,9 +252,27 @@ span {
 }
 
 .r_manage .r_m_top .position_i i.view {
-    display: flex;
+    display: flex;  animation: infinite linear 1.5s plus;
 }
 
+.r_manage .r_m_top a {
+    animation: infinite linear 1.5s plus;height: 38px;
+}
+
+@keyframes plus {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
 
 .view_style {
     width: 100%;
@@ -333,6 +351,7 @@ span {
     margin-left: 12px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .r_m_list .list_style li .img_re img {
@@ -431,6 +450,7 @@ span {
 
 .r_m_thumbnail ul li {
     width: 304px;
+    cursor: pointer;
 
 }
 
