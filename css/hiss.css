@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* 노토산스 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* 어그로체 */
+@import url('https://webfontworld.github.io/sandbox/SBAggro.css');
+/* font-family: 'SBAggro'; */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+
+}
+
+
+h3 {
+    font-size: 16px;
+    margin-left: 8%;
+    margin-bottom: 130px;
+}
+
+.menu_modal {
+    background: #5D9F72;
+}
+
+header nav{
+    color: #5D9F72;
+}
+
+b {
+    color: #6a6a6a;
+}
+
+footer {
+    background: #5D9F72;
+}
+
+
+@media screen and (max-width:1366px) {
+
+
+
+}
+
+@media screen and (max-width:820px) {
+   
+}
+
+@media screen and (max-width:768px) {
+   
+}
+
+@media screen and (max-width:430px) {
+  
+
+}
+
+@media screen and (max-width:360px) {
+  
+
+}
