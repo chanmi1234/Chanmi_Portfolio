@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 a {
@@ -102,8 +103,7 @@ transition: 1s;
 
 .project .content .btn a p {
     font-size: 18px;
-    padding-left: 55px;
-    display: block;
+   
 }
 
 .project .content .btn a i {}
